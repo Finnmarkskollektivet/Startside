@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finnmarkskollektivet</title>
+  <link rel="stylesheet" href="./style.css">
+<style>
+    header, footer {
+      background: #ED975C;
+      padding: 15px 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    header a {
+      text-decoration: none;
+      display: flex;
+     justify-content: center;
+      gap: 10px;
+      color: black;
+      font-weight: bold;
+      font-size: 20px;
+    }
+       body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #dbe6f1;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    
+
+    h2{
+        color:#ED975C
+    }
+  
+
+
+    header img, footer img {
+    width: 30vw;
+    }
+
+    main {
+      flex: 1;
+      padding: 10px;
+    }
+
+    .section {
+      margin-bottom: 10px;
+    }
+
+    .news {
+     
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      font-size: 1.2rem;
+    }
+     .news a{
+    color: rgb(250, 248, 248);
+      background-color:#567573;
+      text-decoration: none;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      border: 1px solid #567573;
+      padding: 5px 10px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: #567573;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+    
+      text-decoration: none;
+      color: rgb(250, 248, 248);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: 0.2s;
+      height: 60px;
+      font-size: 1.8rem;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      text-align: center;
+    }
+
+    #logo{
+      width: 200px;
+
+    }</style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+   
+  <a href="https://finnmarkskollektivet.no" target="_blank">
+    <img src="./Fk_logo.jpg" alt="Logo">
+    
+  </a>
+
+  </header>
+
+  <!-- Innhold -->
+  <main>
+ <div class="section">
+      <h2>Nyheter og beskjeder</h2>
+      <div class="news">
+       <a href="https://outlook.office.com/newsletters/newsletters/b69a71dcf7a82a4b9e39df3e1150348d1a" target="_blank">Nyhetsbrev</a>
+      </div>
+    </div> 
+    
+
+
+  <div id="newsletter-fallback" style="display:none;">
+    <p><strong>Nytt nyhetsbrev tilgjengelig</strong></p>
+    <a href="https://outlook.office.com/newsletters/newsletters/b69a71dcf7a82a4b9e39df3e1150348d1a" target="_blank">
+      Åpne nyhetsbrev
+    </a>
+  </div>
+
+</div>
+
+
+    <!-- Hurtiglenker -->
+    <div class="section">
+      <h2>Hurtigtilgang</h2>
+      <div class="cards">
+        <a class="card" href="https://stfinnmarkskollektivet.sharepoint.com/sites/Porsedyrerfinnmarkskollektivet/SitePages/Home.aspx" target="blank">Prosedyrer</a>
+        <a class="card" href="https://vitecsky.vitec.net/RDWeb/Pages/en-US/login.aspx?ReturnUrl=/RDWeb/Pages/en-US/default.aspx" target="_blank">Innlogging Sikker sone</a>
+        <a class="card" href="https://system.plusoffice.no/system/login/" target="_blank">Avviksmeldinger</a>
+        <a class="card" href="https://login2.checkwareonline.com/v2/finnmarkskollektivet/clinician/backend-commons/login/idporten?ReturnTo=https%3A//login2.checkwareonline.com/v2/finnmarkskollektivet/clinician/" target="_blank" >Checkware</a>
+        <a class="card" href="https://connect.visma.com/?returnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3DGLUP20%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fglup.no%252Fadmin%252Foauth2callback.php%26state%3D%252Fauth%252Foauth2%252Flogin.php%253Fwantsurl%253Dhttps%25253A%25252F%25252Fglup.no%25252F%2526sesskey%253DM2YDhZSPHI%2526id%253D2%26scope%3Dopenid%2520profile%2520email" target="_blank" >Glup kurs</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer> 
+    <a href="https://finnmarkskollektivet.no" target="_blank">
+    <img id = "logo"src="Fk_logo.jpg" alt="Logo" >
+    </a>
+  </footer>
+
+</body>
+</html>

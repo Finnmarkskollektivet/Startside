@@ -1,0 +1,95 @@
+
+    header, footer {
+      background: #ED975C;
+      padding: 15px 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    header a {
+      text-decoration: none;
+      display: flex;
+     justify-content: center;
+      gap: 10px;
+      color: black;
+      font-weight: bold;
+      font-size: 20px;
+    }
+       body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #dbe6f1;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    
+
+    h2{
+        color:#ED975C
+    }
+  
+
+
+    header img, footer img {
+    width: 30vw;
+    }
+
+    main {
+      flex: 1;
+      padding: 10px;
+    }
+
+    .section {
+      margin-bottom: 10px;
+    }
+
+    .news {
+     
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      font-size: 1.2rem;
+    }
+     .news a{
+    color: rgb(250, 248, 248);
+      background-color:#567573;
+      text-decoration: none;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      border: 1px solid #567573;
+      padding: 5px 10px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: #567573;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+    
+      text-decoration: none;
+      color: rgb(250, 248, 248);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: 0.2s;
+      height: 60px;
+      font-size: 1.8rem;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      text-align: center;
+    }
+
+    #logo{
+      width: 200px;
+
+    }
